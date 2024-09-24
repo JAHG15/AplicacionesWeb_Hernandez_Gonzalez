@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Producto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylsheet de la página (completar) -->
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class ="encabezado">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#Sobre_mi">Quienes somos</a></li>
+                <li><a href="#galeria_productos">Productos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <img src="Assets/Images/beautiful-sneakers-graffiti.jpg" alt="Portada 1" class="slide">
+            <img src="Assets/Images/diseno-calzado-deportivo-moderno-movimiento-abstracto-generado-ia_188544-19638.avif" alt="Portada 2" class="slide">
+            <img src="Assets/Images/fashion-shoes-sneakers.jpg" alt="Portada 3" class="slide">
+        </div>
+    </div>
+   <script src="Assets/Scripts/slider.js">
+    
+   </script>
+    <section id="detalle_producto">
+        <div class="producto-detalle">
+            <img id="productoImagen" src="" alt="Imagen del Producto">
+            <h3 id="productoTitulo"></h3>
+            <h5 id="productoPrecio"></h5>
+            <p id="productoDescripcion"></p>
+            <input type="number" min="1" value="1">
+            <br>
+            <br>
+            <button>Comprar</button>
+            <br>
+        </div>
+    </section>
+
+    <script src="Assets/Scripts/verproductos.js">
+        
+    </script>
+</body>
+</html>

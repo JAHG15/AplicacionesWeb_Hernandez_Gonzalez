@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al stylsheet de la página (completar) -->
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <div class ="encabezado">
+        <nav>
+            <ul>
+                <li><a href="#Seccion_principal">Inicio</a></li>
+                <li><a href="#Sobre_mi">Quienes somos</a></li>
+                <li><a href="#galeria_productos">Productos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="slider">
+            <img src="Assets/Images/beautiful-sneakers-graffiti.jpg" alt="Portada 1" class="slide">
+            <img src="Assets/Images/diseno-calzado-deportivo-moderno-movimiento-abstracto-generado-ia_188544-19638.avif" alt="Portada 2" class="slide">
+            <img src="Assets/Images/fashion-shoes-sneakers.jpg" alt="Portada 3" class="slide">
+        </div>
+    </div>
+   <script src="Assets/Scripts/slider.js">
+    
+   </script>
+    <!-- Sección principal -->
+    <section id="Seccion_principal">
+        <h1>Bienvenidos a SneakStyle!</h1>
+        <p>SneakStyle! Donde el estilo se encuentra con la calle.</p>
+    </section>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="Sobre_mi">
+        <h2>Quienes somos!</h2>
+        <ul>
+            <li>SneakStyle es una tienda en línea especializada en sneakers de alta calidad, donde los entusiastas de las zapatillas</li>
+            <li>Aquí pueden encontrar ediciones limitadas, lanzamientos exclusivos y los clásicos más icónicos.</li>
+            <li>Nos destacamos por ofrecer una experiencia de compra premium, asegurando la autenticidad de cada producto y brindando asesoramiento personalizado para que nuestros clientes encuentren su estilo ideal.</li>
+        </ul>
+    </section>
+
+    <!-- Sección "Catalogo Productos" -->
+    <section id="galeria_productos">
+        <div class="galeria">
+            <div class="productos">
+                <img src="Assets/Images/jordan2.jpg" alt="Producto1">
+                <h3>Air Jordan 1 </h3>
+                <h5> $2,999.00</h5>
+                <p>Air Jordan 1 blanco, azul y negro, ideal para tus outfits y combinar con cualquier estilo.</p>
+                <button onclick="comprarProducto(this)">Comprar</button>
+            </div>
+    
+            <div class="productos">
+                <img src="Assets/Images/descarga (6).jpeg" alt="Producto2">
+                <h3>Air Jordan 1</h3>
+                <h5> $2,999.00</h5>
+                <p>Air Jordan 1 blanco, rojo y negro, ideal para tus outfits y combinar con cualquier estilo.</p>
+                <button onclick="comprarProducto(this)">Comprar</button>
+            </div>
+    
+            <div class="productos">
+                <img src="Assets/Images/jordan.jpg" alt="Producto3">
+                <h3>Air Jordan 1</h3>
+                <h5> $2,999.00</h5>
+                <p>Air Jordan 1 blanco, naranja y negro, ideal para tus outfits y combinar con cualquier estilo.</p>
+                <button onclick="comprarProducto(this)">Comprar</button>
+            </div>
+    
+            <div class="productos">
+                <img src="Assets/Images/images.jpeg" alt="Producto4">
+                <h3>Air Jordan 1</h3>
+                <h5> $2,999.00</h5>
+                <p>Air Jordan 1 blanco, azul y negro, ideal para tus outfits y combinar con cualquier estilo.</p>
+                <button onclick="comprarProducto(this)">Comprar</button>
+            </div>
+    
+            <div class="productos">
+                <img src="Assets/Images/images (1).jpeg" alt="Producto5">
+                <h3>Air Jordan 1</h3>
+                <h5> $2,999.00</h5>
+                <p>Air Jordan 1 blanco, gris y negro, ideal para tus outfits y combinar con cualquier estilo.</p>
+                <button onclick="comprarProducto(this)">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <script src="Assets/Scripts/funcionver.js">
+        
+    </script>
+        
+    
+    <!-- Formulario de contacto -->
+    <section id="Contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Comentarios</label>
+            <br>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <br>
+            <button type="submit" >Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
